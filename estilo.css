@@ -1,0 +1,83 @@
+.grid{
+    display: grid;
+    grid-template-areas: 
+        "logo nav nav"
+        "logo conteudo section"
+        "logo container container"
+    ;
+
+    width: 900px;
+    height: 600px;
+
+    margin: 2em;
+}
+
+
+.container{
+    display: grid;
+    grid-template-areas: 
+        "header main footer"
+    ;
+
+    grid-area: container;
+}
+
+
+.logo{
+    grid-area: logo;
+    background-image: url("./assets/imagem.jpg");
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+
+.nav{
+    grid-area: nav;
+    background-image: url("./assets/imagem6.jpg");
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.conteudo{
+    grid-area: conteudo;
+    background-image: url("./assets/imagem1.jpg");
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.section{
+    grid-area: section;
+    background-image: url("./assets/imagem3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.header{
+    grid-area: header;
+    background-image: url("./assets/imagem2.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 1em;
+    border-radius: 1em;
+}
+
+.main{
+    grid-area: main;
+    background-image: url("./assets/imagem4.jfif");
+    margin: 1em;
+    border-radius: 1em;
+
+}
+
+.footer{
+    grid-area: footer;
+    background-image: url("./assets/imagem5.jfif");
+    margin: 1em;
+    border-radius: 1em;
+}
+
